@@ -1,0 +1,38 @@
+@mixin list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link-style {
+  display: inline-block;
+  text-decoration: none;
+}
+
+@mixin media ($min) {
+  @media only screen and (min-width: $min) {
+    @content;
+  }
+}
+
+
+@mixin sticky-footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin psevdo-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
