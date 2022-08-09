@@ -1,0 +1,389 @@
+.contact__box{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form{
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+}
+
+.contact__header-wrapper{
+    width: 100%;
+    max-width: 573px;
+    margin: 0 auto;
+}
+
+.contact__heading{
+    width: 100%;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    color: #36536B;
+}
+
+.contact__input{
+    display: block;
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #36536B;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    outline: none;
+}
+
+.contact__span{
+    padding-left: 20px;
+    opacity: 1;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.0846154px;
+    color: #FF0000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.contact__input:focus{
+    opacity: 1;
+}
+
+.contact__input:not(:placeholder-shown):not(:focus):invalid{
+    opacity: 1;
+    color: #FF0000;
+    border-bottom-color: #FF0000;
+}
+
+.contact__input:not(:placeholder-shown):not(:focus):invalid .contact__span{
+    opacity: 1;
+}
+
+.contact__textarea{
+    display: block;
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+    height: 89px;
+    resize: none;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #36536B;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.contact__agreement-wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.contact__checkbox{
+    width: 24px;
+    height: 24px;
+    margin-right: 26px;
+}
+
+.contac__desc{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+}
+
+.contact__button-wrapper{
+    width: 100%;
+    max-width: 152px;
+}
+
+.contact__button{
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    background-color: transparent;
+    border: 1px solid #36536B;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+}
+
+
+.contact__ads{
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+    text-align: start;
+    margin-top: 80px;
+}
+
+.contact__ads__title-wrapper{
+    width: 100%;
+    max-width: 445px;
+    margin-bottom: 40px;
+}
+
+.contact__ads-title{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.184615px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+.contact__list{
+    max-width: 541px;
+    margin: 31px auto 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 106px 120px;
+    grid-template-rows: 15px 22px 27px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+    row-gap: 43px;
+    list-style: none;
+}
+
+@media only screen and (min-width: 768px){
+    .contact__heading{
+        width: 100%;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -0.369231px;
+        color: #36536B;
+    }
+    
+    .contact__ads{
+        width: 100%;
+        max-width: 445px;
+        margin: 0 auto;
+        text-align: start;
+        margin-top: 80px;
+    }
+    
+    .contact__ads__title-wrapper{
+        width: 100%;
+        max-width: 445px;
+        margin-bottom: 40px;
+    }
+    
+    .contact__ads-title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: -0.184615px;
+        color: #36536B;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
+    
+    .contact__list{
+        padding: 0;
+        max-width: 730px;
+        margin: 31px auto 0 auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 146px 146px 146px;
+        grid-template-rows: 30px 30px;
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+        row-gap: 43px;
+        list-style: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1120px){
+    .contact__box{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .contact__form{
+        width: 100%;
+        max-width: 445px;
+        margin: 0 0;
+    }
+    
+    .contact__header-wrapper{
+        width: 100%;
+        max-width: 634px;
+        margin: 0 0;
+    }
+    
+    .contact__heading{
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.430769px;
+        color: #36536B;
+        text-align: start;
+    }
+    
+    .contact__input{
+        display: block;
+        width: 100%;
+        max-width: 445px;
+        margin: 0 auto;
+        margin-bottom: 8px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 20px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #36536B;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        color: #36536B;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+    
+    .contact__textarea{
+        display: block;
+        width: 100%;
+        max-width: 445px;
+        margin: 0 auto;
+        height: 89px;
+        resize: none;
+        padding-left: 20px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #36536B;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        color: #36536B;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+    
+    .contact__agreement-wrapper{
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+    }
+    
+    .contact__checkbox{
+        width: 24px;
+        height: 24px;
+        margin-right: 26px;
+    }
+    
+    .contac__desc{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.115385px;
+        color: #36536B;
+    }
+    
+    .contact__button-wrapper{
+        width: 100%;
+        max-width: 152px;
+    }
+    
+    .contact__button{
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 14px;
+        background-color: transparent;
+        border: 1px solid #36536B;
+        border-radius: 24px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.115385px;
+        color: #36536B;
+    }
+    
+    
+    .contact__ads{
+        width: 100%;
+        max-width: 445px;
+        margin: 0 auto;
+        text-align: start;
+        margin-top: 80px;
+    }
+    
+    .contact__ads__title-wrapper{
+        width: 100%;
+        max-width: 445px;
+        margin-bottom: 40px;
+    }
+    
+    .contact__ads-title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: start;
+        letter-spacing: -0.184615px;
+        color: #36536B;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
+    
+    .contact__list{
+        padding: 0;
+        max-width: 730px;
+        margin: 47px 0 0 0;
+        margin-left: 100px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 146px 146px 146px;
+        grid-template-rows: 30px 30px;
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+        row-gap: 43px;
+        list-style: none;
+    }
+}
