@@ -8,6 +8,10 @@ body{
     background-size: cover;
 }
 
+.about-body{
+    background-position-y: calc(50% - 48px);
+}
+
 .site-header {
     position: relative;
 }
