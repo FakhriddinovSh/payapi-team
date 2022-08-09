@@ -1,0 +1,118 @@
+.home-partner{
+    background-color: $mirage-blue;
+}
+.partner-bigbox{
+    padding: 100px 0;
+    background-image: url(../images/oval.svg);
+    background-repeat: no-repeat;
+    background-size: 780px 780px;
+    background-position: calc(0% - 400px) calc(0% - 400px);
+}
+.partner-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.partner-box__item{
+    max-width: 445px;
+    height: 272px;
+}
+.partner-box__theme{
+    color: $link-water-light;
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    margin: 0 0 24px;
+}
+.partner-box__commit{
+    color: $link-water-light;
+    line-height: 28px;
+    margin: 0 0 32px;
+}
+.partner-btn{
+    background-color: transparent;
+    border: 1px solid;
+
+    &:hover{
+        color: $mirage-blue;
+        background-color: #FFFFFF;
+    }
+    &:active{
+        color: $link-water-light;
+        background-color: transparent;
+    }
+}
+.partner-box__img-box{
+    height: 103px;
+    width: 536px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.minibox{
+    margin-bottom: 39px;
+}
+.tesla{
+    width: 129px;
+}
+.microsoft{
+    width: 145px;
+}
+.hp{
+    width: 140px;
+}
+.oracle{
+    width: 131px;
+}
+.google{
+    width: 96px;
+}
+.nvidia{
+    width: 137px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .partner-box{
+        flex-direction: column-reverse;
+        align-items: center;   
+    }
+    .partner-bigbox{
+        padding: 80px 0;
+        background-position: center calc(50% - 500px);
+    }
+    .partner-box__img-box{
+        margin-bottom: 60px;
+    }
+    .partner-box__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .partner-box__img-box{
+        height: 154px;
+        width: 280px;
+    }
+    .tesla{
+        width: 107px;
+    }
+    .microsoft{
+        width: 120px;
+    }
+    .hp{
+        width: 114px;
+    }
+    .oracle{
+        width: 108px;
+    }
+    .google{
+        width: 79px;
+    }
+    .nvidia{
+        width: 113px;
+    }
+}
