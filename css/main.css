@@ -189,6 +189,12 @@ img {
   height: auto;
 }
 
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -231,6 +237,142 @@ body {
 .home-hero {
   margin: 0;
   padding: 40px 0 151px;
+<<<<<<< HEAD
+=======
+  background-color: #EDF3F8;
+  background-image: url(../images/oval.svg);
+  background-size: 780px 780px;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 500px) calc(50% - 200px);
+}
+
+/* header-start */
+.site-header {
+  margin: 0;
+  padding: 0 0 7px;
+}
+
+.site-header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo {
+  margin: 0;
+}
+
+.site-header__logo-img {
+  width: 135px;
+  height: 38px;
+}
+
+.site-header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+=======
+/* Islomxon */
+/* Islomxon */
+/* Islomxon */
+/* Islomxon */
+/* Islomxon */
+/*Mashhurbek */
+/*Mashhurbek */
+/*Mashhurbek */
+body {
+  background-image: url("../../images/contact-header-after.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: calc(50% + 226px);
+  background-position-y: calc;
+  background-position-y: calc(50% - 166px);
+  background-size: cover;
+}
+
+.site-header {
+  position: relative;
+}
+
+.site-header__logo {
+  padding-top: 10px;
+}
+
+.site-header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.site-header__hamburger {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  background-image: url("../images/contact-hamburger.svg");
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 17px;
+  z-index: 12;
+  right: 10px;
+}
+
+.site-header--active .site-header__hamburger {
+  background-image: url("../images/contact-hamburger-close.svg");
+  height: 30px;
+}
+
+.site-header__nav {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80%;
+  height: 100vh;
+  background: #1B262F;
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+          box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  -webkit-animation: hamburger 1s ease;
+          animation: hamburger 1s ease;
+  z-index: 10;
+}
+
+.site-header--active .site-header__nav {
+  display: block;
+>>>>>>> a485741b410dfa65b2ea0049aa76e45a1c0861c0
+}
+
+.site-header__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+<<<<<<< HEAD
+  padding-left: 15px;
+  display: flex;
+}
+
+.site-header__item {
+  margin-left: 40px;
+}
+
+.site-header__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #36536b;
+  opacity: 70%;
+  font-weight: 700;
+  line-height: 17.63px;
+}
+.site-header__link:active {
+  opacity: 100%;
+>>>>>>> 0bdff447e1f1895e90005263446e0d51a07968ec
 }
 
 /* hero-start */
@@ -781,21 +923,17 @@ body {
   }
 }
 @media only screen and (min-width: 768px) {
-  .site-header {
-    position: relative;
-  }
-  .site-header::after {
-    position: absolute;
-    content: "";
+  body {
     background-image: url("../../images/contact-header-after.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: calc(50% + 462px);
+    background-position-x: calc(50% + 408px);
     background-position-y: calc;
-    background-position-y: calc(50% - 540px);
-    width: 100%;
-    height: 781px;
-    top: 0px;
+    background-position-y: calc(50% - 342px);
+    background-size: cover;
+  }
+  .site-header {
+    position: relative;
   }
   .site-header__inner {
     display: flex;
@@ -916,6 +1054,10 @@ body {
     text-align: center;
     text-decoration: none;
   }
+  .site-header__tablet-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
   @-webkit-keyframes hamburger {
     0% {
       right: -100%;
@@ -934,21 +1076,17 @@ body {
   }
 }
 @media only screen and (min-width: 1120px) {
-  .site-header {
-    position: relative;
-  }
-  .site-header::after {
-    position: absolute;
-    content: "";
+  body {
     background-image: url("../../images/contact-header-after.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: calc(50% + 462px);
+    background-position-x: calc(50% + 639px);
     background-position-y: calc;
-    background-position-y: calc(50% - 540px);
-    width: 100%;
-    height: 781px;
-    top: 0px;
+    background-position-y: calc(50% - 842px);
+    background-size: cover;
+  }
+  .site-header {
+    position: relative;
   }
   .site-header__logo {
     margin-right: 64px;
@@ -1090,6 +1228,396 @@ body {
     }
   }
 }
+/* Shahobiddin */
+.contact__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form {
+  width: 100%;
+  max-width: 445px;
+  margin: 0 auto;
+}
+
+.contact__header-wrapper {
+  width: 100%;
+  max-width: 573px;
+  margin: 0 auto;
+}
+
+.contact__heading {
+  width: 100%;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.246154px;
+  color: #36536B;
+}
+
+.contact__input {
+  display: block;
+  width: 100%;
+  max-width: 445px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #36536B;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  outline: none;
+}
+
+.contact__span {
+  opacity: 0;
+  padding-left: 20px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.0846154px;
+  color: #FF0000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.contact__input:focus {
+  opacity: 1;
+}
+
+.contact__input:not(:placeholder-shown):not(:focus):invalid {
+  opacity: 1;
+  color: #FF0000;
+  border-bottom-color: #FF0000;
+}
+
+.contact__textarea {
+  display: block;
+  width: 100%;
+  max-width: 445px;
+  margin: 0 auto;
+  height: 89px;
+  resize: none;
+  padding-left: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #36536B;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.contact__agreement-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+.contact__checkbox {
+  width: 24px;
+  height: 24px;
+  margin-right: 26px;
+}
+
+.contac__desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #36536B;
+}
+
+.contact__button-wrapper {
+  width: 100%;
+  max-width: 152px;
+}
+
+.contact__button {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  background-color: transparent;
+  border: 1px solid #36536B;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #36536B;
+}
+
+.contact__ads {
+  width: 100%;
+  max-width: 445px;
+  margin: 0 auto;
+  text-align: start;
+  margin-top: 80px;
+}
+
+.contact__ads__title-wrapper {
+  width: 100%;
+  max-width: 445px;
+  margin-bottom: 40px;
+}
+
+.contact__ads-title {
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.184615px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.contact__list {
+  max-width: 541px;
+  margin: 31px auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 106px 120px;
+      grid-template-columns: 106px 120px;
+  -ms-grid-rows: 15px 22px 27px;
+      grid-template-rows: 15px 22px 27px;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 43px;
+  list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact__heading {
+    width: 100%;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+  }
+  .contact__ads {
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+    text-align: start;
+    margin-top: 80px;
+  }
+  .contact__ads__title-wrapper {
+    width: 100%;
+    max-width: 445px;
+    margin-bottom: 40px;
+  }
+  .contact__ads-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.184615px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+  }
+  .contact__list {
+    padding: 0;
+    max-width: 730px;
+    margin: 31px auto 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 146px 146px 146px;
+        grid-template-columns: 146px 146px 146px;
+    -ms-grid-rows: 30px 30px;
+        grid-template-rows: 30px 30px;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+    row-gap: 43px;
+    list-style: none;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .contact__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact__form {
+    width: 100%;
+    max-width: 445px;
+    margin: 0 0;
+  }
+  .contact__header-wrapper {
+    width: 100%;
+    max-width: 634px;
+    margin: 0 0;
+  }
+  .contact__heading {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.430769px;
+    color: #36536B;
+    text-align: start;
+  }
+  .contact__input {
+    display: block;
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #36536B;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .contact__textarea {
+    display: block;
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+    height: 89px;
+    resize: none;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #36536B;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .contact__agreement-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 16px;
+  }
+  .contact__checkbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 26px;
+  }
+  .contac__desc {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+  }
+  .contact__button-wrapper {
+    width: 100%;
+    max-width: 152px;
+  }
+  .contact__button {
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    background-color: transparent;
+    border: 1px solid #36536B;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+  }
+  .contact__ads {
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+    text-align: start;
+    margin-top: 80px;
+  }
+  .contact__ads__title-wrapper {
+    width: 100%;
+    max-width: 445px;
+    margin-bottom: 40px;
+  }
+  .contact__ads-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: start;
+    letter-spacing: -0.184615px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+  }
+  .contact__list {
+    padding: 0;
+    max-width: 730px;
+    margin: 47px 0 0 0;
+    margin-left: 100px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 146px 146px 146px;
+        grid-template-columns: 146px 146px 146px;
+    -ms-grid-rows: 30px 30px;
+        grid-template-rows: 30px 30px;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+    row-gap: 43px;
+    list-style: none;
+  }
+}
+
 /* Shahobiddin */
 /* Shahobiddin */
 /* Shahobiddin *//*# sourceMappingURL=main.css.map */
