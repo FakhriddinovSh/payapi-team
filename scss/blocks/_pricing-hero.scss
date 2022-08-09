@@ -1,0 +1,269 @@
+/* PRICING PAGE HERO SECTION START */
+
+.pricing-hero {
+	padding-top: 8px;
+	padding-bottom: 80px;
+	background-color: #EDF3F8;
+}
+
+.pricing__title {
+	margin: 0;
+	margin-bottom: 48px;
+	font-family: $second-font;
+	font-family: 'DM Serif Display';
+	font-size: 32px;
+	line-height: 36px;
+	letter-spacing: -0.246154px;
+	color: $san-juan-blue;
+	text-align: center;
+}
+
+.pricing-hero__list {
+	width: 100%;
+	max-width: 327px;
+	@include list-unstyled;
+	margin: 0 auto;
+}
+
+.pricing-hero__item {
+	width: 100%;
+	text-align: center;
+}
+
+.pricing-hero__item:not(:last-child) {
+	margin-bottom: 48px;
+}
+
+.pricing__hero__heading {
+	margin: 0;
+	margin-bottom: 81px;
+	font-family: 'DM Serif Display';
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.184615px;
+	color: #BA4270;
+}
+
+.pricing-hero__text {
+	display: none;
+	margin: 0;
+	font-size: 15px;
+	line-height: 28px;
+	color: #6C8294;
+}
+
+.pricing-hero__price {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 24px;
+	padding-bottom: 24px;
+	font-family: $second-font;
+	font-size: 56px;
+	line-height: 72px;
+	letter-spacing: -0.430769px;
+	color: #36536B;
+	border-bottom: 1px solid #BFCBD5;
+}
+
+.pricing-hero__internal-list {
+	width: 100%;
+	@include list-unstyled;
+	margin: 0 auto;
+	margin-bottom: 24px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #BFCBD5;
+}
+
+.pricing-hero__internal-item {
+	max-width: 134px;
+	margin: 0 auto;
+}
+
+.pricing-hero__internal-item:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.pricing-hero__label {
+	display: flex;
+	align-items: center;
+	line-height: 28px;
+	color: #36536B;
+}
+
+.pricing-hero__input:checked~.pricing-hero__input-span {
+	opacity: 1;
+}
+
+.pricing-hero__input:disabled~.pricing-hero__label-span {
+	opacity: 0.5;
+}
+
+.pricing-hero__input-span {
+	display: inline-block;
+	width: 14px;
+	height: 10px;
+	margin-right: 24px;
+	background-image: url("../images/prising-checked.svg");
+	background-size: cover;
+	opacity: 0;
+}
+
+.pricing-hero__btn {
+	display: inline-block;
+	padding: 15px 28px;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: -0.115385px;
+	color: #36536B;
+	border: 1px solid #36536B;
+	border-radius: 24px;
+	background-color: transparent;
+	transition: all 0.3s ease;
+
+	&:hover {
+		color: #fff;
+		background-color: #36536B;
+		transition: all 0.3s ease;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+	}
+
+	&:disabled:hover {
+		color: #36536B;
+		background-color: transparent;
+	}
+}
+
+@include media (576px) {
+	.pricing-hero__list {
+		width: 100%;
+		max-width: 327px;
+		max-width: 550px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@include list-unstyled;
+		margin: 0 auto;
+	}
+
+	.pricing-hero__item {
+		width: 100%;
+		max-width: 250px;
+		text-align: center;
+	}
+
+	.pricing-hero__item:nth-child(3) {
+		margin: 0 auto;
+	}
+}
+
+@include media (768px) {
+	.pricing-hero {
+		padding-top: 35px;
+		padding-bottom: 100px;
+	}
+
+	.pricing__title {
+		margin-bottom: 69px;
+		font-size: 48px;
+		line-height: 56px;
+		letter-spacing: -0.369231px;
+	}
+
+	.pricing-hero__text {
+		display: block;
+		margin-bottom: 19px;
+	}
+
+	.pricing-hero__list {
+		flex-wrap: nowrap;
+		width: 100%;
+		max-width: 689px;
+	}
+
+	.pricing-hero__item {
+		width: 100%;
+		max-width: 223px;
+		text-align: center;
+	}
+
+	.pricing-hero__item:not(:last-child) {
+		margin-bottom: 0px;
+	}
+
+	.pricing-hero__item:nth-child(3) {
+		margin: 0;
+	}
+
+	.pricing__hero__heading {
+		margin: 0;
+		margin-bottom: 13px;
+		line-height: 40px;
+	}
+
+	.pricing-hero__price {
+		padding-bottom: 21px;
+		font-size: 48px;
+	}
+
+	.pricing-hero__internal-list {
+		max-width: 100%;
+	}
+
+	.pricing-hero__internal-item {
+		max-width: 134px;
+		margin: 0 auto;
+	}
+}
+
+
+@include media (1100px) {
+	.pricing-hero {
+		padding-top: 42px;
+		padding-bottom: 96px;
+	}
+
+	.pricing__title {
+		margin-bottom: 72px;
+		font-size: 56px;
+		text-align: left;
+	}
+
+	.pricing-hero__text {
+		margin-bottom: 8px;
+	}
+
+	.pricing-hero__list {
+		width: 100%;
+		max-width: 1110px;
+	}
+
+	.pricing-hero__item {
+		width: 100%;
+		max-width: 350px;
+		text-align: left;
+	}
+
+	.pricing__hero__heading {
+		margin: 0;
+		margin-bottom: 16px;
+		font-size: 32px;
+	}
+
+	.pricing-hero__price {
+		padding-bottom: 24px;
+		font-size: 56px;
+		line-height: 72px;
+	}
+
+	.pricing-hero__internal-list {
+		max-width: 100%;
+	}
+
+	.pricing-hero__internal-item {
+		margin: 0;
+	}
+}
