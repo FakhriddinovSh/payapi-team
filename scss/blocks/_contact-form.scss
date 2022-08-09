@@ -48,8 +48,8 @@
 }
 
 .contact__span{
+    opacity: 0;
     padding-left: 20px;
-    opacity: 1;
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 400;
@@ -72,7 +72,6 @@
 }
 
 .contact__input:not(:placeholder-shown):not(:focus):invalid .contact__span{
-    opacity: 1;
 }
 
 .contact__textarea{
