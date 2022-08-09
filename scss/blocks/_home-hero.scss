@@ -1,55 +1,10 @@
 .home-hero{
     margin: 0;
     padding: 40px 0 151px;
-    background-color: #EDF3F8;
-    background-image: url(../images/oval.svg);
-    background-size: 780px 780px;
-    background-repeat: no-repeat;
-    background-position: calc(50% + 500px) calc(50% - 200px);
 }
 
-// header-start
-/* header-start */
-.site-header{
-    margin: 0;
-    padding: 0 0 7px;
-}
-.site-header__nav{
-    display: flex;
-    align-items: center;
-}
-.site-header__logo{
-    margin: 0;
-}
-.site-header__logo-img{
-    width: 135px;
-    height: 38px;
-}
-.site-header__box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%
-}
-.site-header__list{
-    @include list-unstyled;
-    padding-left: 15px;
-    display: flex;
-}
-.site-header__item{
-    margin-left: 40px;
-}
-.site-header__link{
-    @include link-style;
-    color: $san-juan-blue;
-    opacity: 70%;
-    font-weight: 700;
-    line-height: 17.63px;
-
-    &:active{
-        opacity: 100%;
-    }
-}
+// hero-start
+/* hero-start */
 .btn{
     @include link-style;
     padding: 16px 24.5px 14px 26.5px;
@@ -68,12 +23,6 @@
         opacity: 0.5;
     }
 }
-
-// header-end
-/* header-end */ 
-
-// hero-start
-/* hero-start */
 .hero-main-box{
     position: relative;
 }
@@ -141,16 +90,19 @@
 /* hero-end */
 
 @media only screen and (max-width: 1100px) {
+    .site-header{
+        &::after{
+            background-position: calc(50% + 400px);
+        }
+    }
     .home-hero{
         padding: 40px 0 140px;
-        background-position: calc(50% + 450px) calc(50% - 250px);
     }
 }
 
 @media only screen and (max-width: 1024px) {
     .home-hero{
         padding: 40px 0 130px;
-        background-position: calc(50% + 400px) calc(50% - 300px);
     }
     .hero-box{
         max-width: 450px;
@@ -166,7 +118,6 @@
 @media only screen and (max-width: 900px) {
     .home-hero{
         padding: 40px 0 110px;
-        background-position: calc(50% + 350px) calc(50% - 350px);
     }
     .hero-img{
         width: 300px;
@@ -179,8 +130,6 @@
 @media only screen and (max-width: 768px) {
     .home-hero{
         padding: 40px 0 99px;
-        background-position: center calc(50% - 550px);
-        background-size: 949px 949px;
     }
     .hero-main-box{
         margin-top: 396px;
@@ -208,21 +157,20 @@
         letter-spacing: -0.37px;
         text-align: center;
     }
+    .home-header__box{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 660px) {
     .home-hero{
         padding: 40px 0 90px;
     }
-    .site-header__box{
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 480px) {
     .home-hero{
         padding: 32px 0 79px;
-        background-position: center calc(50% - 640px);
     }
     .hero-box{
         max-width: 327px;

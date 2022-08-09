@@ -1,0 +1,37 @@
+.home-first{
+    background-image: #EDF3F8;
+    padding: 150px 100px;
+}
+.home-implement{
+    margin: 0;
+    padding: 0;
+}
+.implement-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.implement__img{
+    width: 445px;
+    height: 284px;
+}
+.implement__img2{
+    width: 566px;
+    height: 500px;
+}
+.implement__itembox{
+    width: 445px;
+    height: 170px;
+}
+.implement__theme{
+    margin: 0 0 24px;
+    color: $san-juan-blue;
+    font-family: 'DM Serif Display';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+}
+.implement__commit{
+
+}
