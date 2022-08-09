@@ -544,12 +544,21 @@ body {
   height: 100%;
 }
 
+.about-hero__img--tablet {
+  display: none;
+}
+
+.about-hero__img--desctop {
+  display: none;
+}
+
 .about-hero__bottom-list {
   margin: 0;
   padding: 0;
   list-style: none;
   width: 100%;
   max-width: 400px;
+  margin: 0 auto;
   margin-bottom: 48px;
   padding: 16px 0;
   border-top: 1px solid #BFCBD5;
@@ -579,6 +588,126 @@ body {
   color: #BA4270;
 }
 
+@media only screen and (min-width: 576px) {
+  .about-hero {
+    padding-top: 35px;
+  }
+  .about-hero__title-box {
+    max-width: 573px;
+  }
+  .about-hero__title {
+    margin-bottom: 54px;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.369231px;
+  }
+  .about-hero__list {
+    margin-bottom: 92px;
+  }
+  .about-hero__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 689px;
+    text-align: left;
+  }
+  .about-hero__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  .about-hero__heading {
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.246154px;
+  }
+  .about-hero__text-box {
+    max-width: 350px;
+  }
+  .about-hero__middle {
+    max-width: 1024px;
+    height: 267px;
+    margin-bottom: 64px;
+  }
+  .about-hero__img--mobile {
+    display: none;
+  }
+  .about-hero__img--tablet {
+    display: block;
+  }
+  .about-hero__bottom-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 64px;
+    padding: 44px 0;
+    padding-bottom: 16px;
+    text-align: left;
+  }
+  .about-hero__bottom-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .about-hero__bottom-heading {
+    display: none;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .about-hero__text-box {
+    max-width: 456px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about-hero {
+    padding-top: 42px;
+  }
+  .about-hero__title-box {
+    max-width: 730px;
+    margin: 0;
+    margin-left: 95px;
+  }
+  .about-hero__title {
+    margin-bottom: 51px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.430769px;
+    text-align: left;
+  }
+  .about-hero__list {
+    margin-bottom: 100px;
+  }
+  .about-hero__item {
+    max-width: 920px;
+  }
+  .about-hero__item:not(:last-child) {
+    margin-bottom: 56px;
+  }
+  .about-hero__text-box {
+    max-width: 635px;
+  }
+  .about-hero__middle {
+    max-width: 1440px;
+    height: 500px;
+    margin-bottom: 72px;
+  }
+  .about-hero__img--tablet {
+    display: none;
+  }
+  .about-hero__img--desctop {
+    display: block;
+  }
+  .about-hero__bottom-list {
+    margin-bottom: 72px;
+    padding: 16px 0;
+    text-align: left;
+  }
+  .about-hero__bottom-heading {
+    display: block;
+    margin: 0;
+  }
+}
 /*Mashhurbek */
 /*Mashhurbek */
 /* Shahobiddin */
