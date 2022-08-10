@@ -195,6 +195,10 @@
 @include media (1024px) {
 	.about-hero {
 		padding-top: 42px;
+		background-image: url("../images/about-hero-bg-circle.svg");
+		background-repeat: no-repeat;
+		background-size: 780px 780px;
+		background-position: calc(50% + -900px) 473px;
 	}
 
 	.about-hero__title-box {
