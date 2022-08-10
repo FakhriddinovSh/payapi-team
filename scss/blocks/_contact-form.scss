@@ -58,7 +58,7 @@
     letter-spacing: -0.0846154px;
     color: #FF0000;
     mix-blend-mode: normal;
-    opacity: 0.5;
+    transition: opacity 0.5s ease;
 }
 
 .contact__input:focus{
@@ -71,7 +71,8 @@
     border-bottom-color: #FF0000;
 }
 
-.contact__input:not(:placeholder-shown):not(:focus):invalid .contact__span{
+.contact__input:not(:placeholder-shown):not(:focus):invalid ~ .contact__span{
+    opacity: 1;
 }
 
 .contact__textarea{
@@ -92,18 +93,63 @@
     color: #36536B;
     mix-blend-mode: normal;
     opacity: 0.5;
+    outline: none;
+}
+
+.contact__textarea:focus{
+    opacity: 1;
+}
+
+.contact__textarea:not(:placeholder-shown):not(:focus):invalid{
+    opacity: 1;
+    color: #FF0000;
+    border-bottom-color: #FF0000;
+}
+
+.contact__checkbox{
+    position: relative;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 26px;
+    background: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.contact__checkbox::after{
+    position: absolute;
+    opacity: 0;
+    content: "";
+    background-image: url("../images/checked.svg");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 18px;
+    left: 0;
+    right: 0;
+    top: 5px;
+    margin: 0 auto;
+}
+
+.contact__checkbox:checked{
+    background-color: #BA4270;
+    opacity: 1;
+}
+
+.contact__checkbox:disabled{
+    background: #36536B;
+    opacity: 0.05;
+}
+
+.contact__checkbox:checked::after{
+    opacity: 1;
 }
 
 .contact__agreement-wrapper{
     display: flex;
     align-items: center;
     margin-top: 16px;
-}
-
-.contact__checkbox{
-    width: 24px;
-    height: 24px;
-    margin-right: 26px;
+    margin-bottom: 24px;
 }
 
 .contac__desc{
@@ -132,6 +178,10 @@
     text-align: center;
     letter-spacing: -0.115385px;
     color: #36536B;
+    &:hover{
+        background: #36536B;
+        color: #FBFCFE;
+    }
 }
 
 
@@ -308,7 +358,8 @@
     .contact__agreement-wrapper{
         display: flex;
         align-items: center;
-        margin-top: 16px;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
     
     .contact__checkbox{
@@ -351,7 +402,7 @@
         max-width: 445px;
         margin: 0 auto;
         text-align: start;
-        margin-top: 80px;
+        margin-top: 140px;
     }
     
     .contact__ads__title-wrapper{
