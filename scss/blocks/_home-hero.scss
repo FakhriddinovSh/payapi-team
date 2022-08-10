@@ -53,32 +53,31 @@
     letter-spacing: -0.55px;
 }
 .contact-form{
-    max-width: 445px;
     height: 48px;
     margin-bottom: 16px;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    background: $link-water-light;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-    border-radius: 24px;
+    position: relative;
+        width: 100%;
+    width: 445px;
 }
 .form-control{
-    padding: 16px 0 14px 27px;
+    padding: 16px 27px 14px 27px;
     border-radius: 24px;
+    background: $link-water-light;
     border: none;
     width: 100%;
     font-weight: 700;
     line-height: 17.63px;
     color: $san-juan-blue;
     opacity: 50%;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
 
     &:active{
         opacity: 100%;
     }
 }
 .btn-primary{
+    position: absolute;
+    right: 0px;
     border: none;
 }
 .hero-box__link{
@@ -175,6 +174,37 @@
     .home-header__box{
         display: none;
     }
+    .contact-form{
+        height: 48px;
+        margin-bottom: 16px;
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+    }
+    .form-control{
+        padding: 16px 27px 14px 27px;
+        border-radius: 24px;
+        background: $link-water-light;
+        border: none;
+        width: 100%;
+        max-width: 900px;
+        font-weight: 700;
+        line-height: 17.63px;
+        color: $san-juan-blue;
+        opacity: 50%;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        &:active{
+            opacity: 100%;
+        }
+    }
+    .btn-primary{
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        border: none;
+        width: 100%;
+        max-width: 900px;
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -208,39 +238,5 @@
         font-size: 32px;
         line-height: 36px;
         letter-spacing: -0.25px;
-    }
-    .contact-form{
-        max-width: 327px;
-        height: 48px;
-    }
-    .row{
-        display: block;
-        margin-bottom: 16px;
-        height: 48px;
-    }
-    .form-control{
-        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-        border-radius: 24px;
-        border: none;
-        width: 100%;
-        font-weight: 700;
-        line-height: 17.63px;
-        color: $san-juan-blue;
-        opacity: 50%;
-    
-        &:active{
-            opacity: 100%;
-        }
-    }
-    .btn-primary{
-        margin-top: 16px;
-        width: 100%;
-        border: none;
-    }
-    .hero-box__link{
-        margin-top: 70px;
-        padding: 0;
-        text-align: center;
-        line-height: 17.63px;
     }
 }
