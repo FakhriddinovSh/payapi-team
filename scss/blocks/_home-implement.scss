@@ -67,16 +67,21 @@
         height: 320px;
     }
 }
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 480px) {
     .home-implement{
         padding: 50px 0;
     }
     .implement-box__img{
         max-width: 300px;
-        height: 200px;
+        height: 195px;
     }
     .implement-box__img2{
         max-width: 320px;
-        height: 500px;
-    }    
+        height: 285px;
+    }   
+    .implement-box__theme{
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: -0.28px;
+    } 
 }
