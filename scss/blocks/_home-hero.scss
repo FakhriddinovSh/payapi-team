@@ -152,8 +152,6 @@
         margin-top: 396px;
     }
     .hero-img{
-        position: absolute;
-        content: "";
         width: 250px;
         height: 400px;
         top: -400px;
@@ -186,10 +184,10 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .home-hero{
-        padding: 32px 0 79px;
+    .home-body{
+        background-position: center calc(50% - 400px);
     }
-    .hero-box{
+    .hero-box{  
         max-width: 327px;
         height: 285px;
     }
@@ -241,8 +239,4 @@
         text-align: center;
         line-height: 17.63px;
     }
-}
-
-@media only screen and (max-width: 375px) {
-
 }
