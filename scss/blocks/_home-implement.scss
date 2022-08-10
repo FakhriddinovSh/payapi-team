@@ -1,0 +1,82 @@
+.home-implement{
+    margin: 0;
+    padding: 150px 0 0;
+    z-index: 2;
+    background-image: url(../images/oval.svg);
+    background-position: calc(50% + 700px) calc(50% + 200px);
+    background-repeat: no-repeat;
+}
+.implement-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.implement-box__img{
+    max-width: 445px;
+    height: 284px;
+}
+.implement-box__img2{
+    max-width: 570px;
+    height: 500px;
+}
+.implement-box__itembox{
+    max-width: 445px;
+    height: 170px;
+    margin-left: 20px;
+}
+.implement-box__theme{
+    margin: 0 0 24px;
+    color: $san-juan-blue;
+    font-family: 'DM Serif Display';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+}
+.implement-box__commit{
+    margin: 0;
+    color: $light-san-juan-blue;
+    line-height: 28px;
+}
+
+@media only screen and (max-width: 880px) {
+    .implement-box{
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .implement-box__img{
+        margin-bottom: 48px;
+    }
+    .implement-box__img2{
+        margin-bottom: 48px;
+    }
+    .implement-box__two{
+        flex-direction: column-reverse;
+    }
+    .implement-box__itembox{
+    text-align: center;
+    }
+    .implement-box__img{
+        width: 390px;
+        height: 250px;
+    }
+    .implement-box__img2{
+        width: 363px;
+        height: 320px;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .home-implement{
+        padding: 50px 0;
+    }
+    .implement-box__img{
+        max-width: 300px;
+        height: 200px;
+    }
+    .implement-box__img2{
+        max-width: 320px;
+        height: 500px;
+    }    
+}
