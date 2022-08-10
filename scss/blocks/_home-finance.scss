@@ -1,0 +1,66 @@
+.home-finance{
+    margin: 0 0 96px;
+    padding: 0;
+}
+.home-finance__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1150px;
+    padding: 0;
+    list-style: none;
+}
+.home-finance__item{
+    max-width: 350px;
+    padding-top: 150px;
+    position: relative;
+}
+.home-finance__item:nth-child(1)::before{
+    position: absolute;
+    content: "";
+    width: 106px;
+    height: 106px;
+    top: -5px;
+    left: 35%;
+    background-image: url(../../images/home-finance-item1.svg);
+}
+.home-finance__item:nth-child(2)::before{
+    position: absolute;
+    content: "";
+    width: 106px;
+    height: 106px;
+    top: -5px;
+    left: 35%;
+    background-image: url(../../images/home-finance-item2.svg);
+}
+.home-finance__item:nth-child(3)::before{
+    position: absolute;
+    content: "";
+    width: 106px;
+    height: 106px;
+    top: -5px;
+    left: 35%;
+    background-image: url(../../images/home-finance-item3.svg);
+}
+.home-finance__theme{
+    color: $san-juan-blue;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.14px;
+    text-align: center;   
+}
+.home-finance__commit{
+    color: $light-san-juan-blue;
+    line-height: 25px;
+    letter-spacing: -0.12px;
+    text-align: center;
+}
+@media only screen and (max-width: 770px) {
+    .home-finance__list{
+        flex-direction: column;
+    }
+    .home-finance__item{
+        margin-bottom: 48px;
+    }
+}

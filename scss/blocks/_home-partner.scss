@@ -1,8 +1,6 @@
 .home-partner{
     background-color: $mirage-blue;
-}
-.partner-bigbox{
-    padding: 100px 0;
+    padding: 88px 0;
     background-image: url(../images/oval.svg);
     background-repeat: no-repeat;
     background-size: 780px 780px;
@@ -74,13 +72,12 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .home-partner{
+        background-position: center calc(50% - 500px);
+    }
     .partner-box{
         flex-direction: column-reverse;
         align-items: center;   
-    }
-    .partner-bigbox{
-        padding: 80px 0;
-        background-position: center calc(50% - 500px);
     }
     .partner-box__img-box{
         margin-bottom: 60px;
@@ -114,5 +111,13 @@
     }
     .nvidia{
         width: 113px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .home-partner{
+        padding: 40px 0 140px;
+    }
+    .partner-box__theme{
+        margin: 0 0 15px;
     }
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body class="home-body">
     <header class="site-header">
         <div class="container">
             <div class="site-header__inner">
@@ -62,77 +62,79 @@
         </div>
     </section>
     <section class="home-partner">
-        <div class="partner-bigbox">
-            <div class="container">
-                <div class="partner-box">
-                    <div class="partner-box__item">
-                        <h2 class="partner-box__theme">Who we work with</h2>
-                        <p class="partner-box__commit">Today, millions of people around the world have successfully 
-                            connected their accounts to apps they love using our API. 
-                            We provide developers with the tools they need to create easy 
-                            and accessible experiences for their users. 
-                        </p>
-                        <a class="partner-btn btn" href="./about.html">About Us</a>
-                    </div>
-                    <div class="partner-box__img-box">
-                        <img class="minibox tesla" src="./images/home-partner-tesla.svg" alt="TESLA">
-                        <img class="minibox microsoft" src="./images/home-partner-microsoft.svg" alt="Microsoft">
-                        <img class="minibox hp" src="./images/home-partner-hp.svg" alt="hp">
-                        <img class="minibox oracle" src="./images/home-partner-oracle.svg" alt="ORACLE">
-                        <img class="minibox google" src="./images/home-partner-google.svg" alt="Google">
-                        <img class="minibox nvidia" src="./images/home-partner-nvidia.svg" alt="NVIDIA">
-                    </div>
+        <div class="container">
+            <div class="partner-box">
+                <div class="partner-box__item">
+                    <h2 class="partner-box__theme">Who we work with</h2>
+                    <p class="partner-box__commit">Today, millions of people around the world have successfully 
+                        connected their accounts to apps they love using our API. 
+                        We provide developers with the tools they need to create easy 
+                        and accessible experiences for their users. 
+                    </p>
+                    <a class="partner-btn btn" href="./about.html">About Us</a>
+                </div>
+                <div class="partner-box__img-box">
+                    <img class="minibox tesla" src="./images/home-partner-tesla.svg" alt="TESLA">
+                    <img class="minibox microsoft" src="./images/home-partner-microsoft.svg" alt="Microsoft">
+                    <img class="minibox hp" src="./images/home-partner-hp.svg" alt="hp">
+                    <img class="minibox oracle" src="./images/home-partner-oracle.svg" alt="ORACLE">
+                    <img class="minibox google" src="./images/home-partner-google.svg" alt="Google">
+                    <img class="minibox nvidia" src="./images/home-partner-nvidia.svg" alt="NVIDIA">
                 </div>
             </div>
         </div>
     </section>
-    <section class="home-first">
+    <section class="home-implement">
         <div class="container">
-            <div class="home-implement">
-                <div class="implement-box">
-                    <img class="implement__img" src="./images/home-implement-item1.svg" alt="terminal-code">
-                    <div class="implement__itembox">
-                        <h2 class="implement__theme">Easy to implement</h2>
-                        <p class="implement__commit">Our API comes with just a few lines of code. You’ll be up and running in no time. 
-                            We built our documentation page to integrate payments functionality with ease.
-                        </p>
-                    </div>
-                </div>
-                <div class="implement-box">
-                    <div class="implement__itembox">
-                        <h2 class="implement__theme">Simple UI & UX</h2>
-                        <p class="implement__commit">Our pre-built form is easy to integrate in your app or website’s checkout flow 
-                            and designed to optimize conversion. 
-                        </p>
-                    </div>
-                    <img class="implement__img2" src="./images/home-implement-item2.svg" alt="pay api apk">
+            <div class="implement-box">
+                <img class="implement-box__img" src="./images/home-implement-item1.svg" alt="terminal-code">
+                <div class="implement-box__itembox">
+                    <h2 class="implement-box__theme">Easy to implement</h2>
+                    <p class="implement-box__commit">Our API comes with just a few lines of code. You’ll be up and running in no time. 
+                        We built our documentation page to integrate payments functionality with ease.
+                    </p>
                 </div>
             </div>
-            <!-- <div class="home-finance">
-                <ul>
-                    <li>
-                        <h3>Personal Finances</h3>
-                        <p>Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account. </p>
+            <div class="implement-box implement-box__two">
+                <div class="implement-box__itembox">
+                    <h2 class="implement-box__theme">Simple UI & UX</h2>
+                    <p class="implement-box__commit">Our pre-built form is easy to integrate in your app or website’s checkout flow 
+                        and designed to optimize conversion. 
+                    </p>
+                </div>
+                <img class="implement-box__img2" src="./images/home-implement-item2.svg" alt="pay api apk">
+            </div>
+        </div>
+    </section>
+    <section class="home-finance">
+            <div class="container">
+                <ul class="home-finance__list">
+                    <li class="home-finance__item">
+                        <h3 class="home-finance__theme">Personal Finances</h3>
+                        <p class="home-finance__commit">Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account. </p>
                     </li>
-                    <li>
-                        <h3>Banking & Coverage</h3>
-                        <p>With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts.</p>
+                    <li class="home-finance__item">
+                        <h3 class="home-finance__theme">Banking & Coverage</h3>
+                        <p class="home-finance__commit">With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts.</p>
                     </li>
-                    <li>
-                        <h3>Consumer Payments</h3>
-                        <p>It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.</p>
+                    <li class="home-finance__item">
+                        <h3 class="home-finance__theme">Consumer Payments</h3>
+                        <p class="home-finance__commit">It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.</p>
                     </li>
                 </ul>
             </div>
-            <div class="home-contact">
-                <h2>Ready to start?</h2>
+    </section>
+    <section class="hero-contact">
+        <div class="container">
+            <div class="hero-contact__box">
+                <h2 class="hero-contact__theme">Ready to start?</h2>
                 <form class="contact-form" action="https://formsubmit.co/islombekr70@gmail.com" method="POST">
                     <div class="row">
                         <input class="form-control" type="text" id="email" placeholder="Enter email address" autocomplete="off" name="email: ">
                         <input  class="btn-primary btn" type="submit" value="Schedule a Demo">
                     </div>
                 </form>
-            </div> -->
+            </div>
         </div>
     </section>
     <script src="./js/main.js"></script>

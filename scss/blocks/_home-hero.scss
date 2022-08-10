@@ -1,6 +1,10 @@
+.home-body{
+    background-size: 780px 780px;
+    background-position: calc(50% + 450px) calc(0% - 230px);
+}
 .home-hero{
     margin: 0;
-    padding: 40px 0 151px;
+    padding: 0 0 151px;
 }
 
 // hero-start
@@ -90,6 +94,9 @@
 /* hero-end */
 
 @media only screen and (max-width: 1100px) {
+    .home-body{
+        background-position: calc(50% + 400px) calc(0% - 340px);
+    }
     .site-header{
         &::after{
             background-position: calc(50% + 400px);
@@ -101,6 +108,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .home-body{
+        background-position: calc(50% + 350px) calc(0% - 340px);
+    }
     .home-hero{
         padding: 40px 0 130px;
     }
@@ -116,6 +126,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .home-body{
+        background-position: calc(50% + 300px) calc(0% - 400px);
+    }
     .home-hero{
         padding: 40px 0 110px;
     }
@@ -128,6 +141,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .home-body{
+        background-size: 949px 949px;
+        background-position: center calc(50% - 300px);
+    }
     .home-hero{
         padding: 40px 0 99px;
     }
