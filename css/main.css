@@ -454,7 +454,12 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+<<<<<<< HEAD
   .home-body {
+=======
+  .home-hero {
+    padding: 32px 0 79px;
+>>>>>>> c7c0ad458d60eec5f519dbdf374b9195157c8ccf
     background-position: center calc(50% - 400px);
   }
   .hero-box {
@@ -913,7 +918,6 @@ body {
 .pricing-hero {
   padding-top: 8px;
   padding-bottom: 80px;
-  background-color: #EDF3F8;
 }
 
 .pricing-hero__title {
@@ -1434,9 +1438,9 @@ body {
 body {
   background-image: url("../../images/contact-header-after.svg");
   background-repeat: no-repeat;
-  background-position-x: calc(50% + 307px);
-  background-position-y: calc(50% - 394px);
+  /*background-position: calc(50% + 307px) calc(50% - 394px);*/
   background-size: 780px;
+  background-position: 307px calc(50% - 394px);
 }
 
 .site-header {
@@ -1462,7 +1466,6 @@ body {
 }
 
 .site-header__hamburger {
-  position: absolute;
   background-color: transparent;
   border: none;
   background-image: url("../images/contact-hamburger.svg");
@@ -1470,7 +1473,6 @@ body {
   width: 28px;
   height: 17px;
   z-index: 12;
-  right: 10px;
 }
 
 .site-header--active .site-header__hamburger {
@@ -1495,6 +1497,10 @@ body {
 
 .site-header--active .site-header__nav {
   display: block;
+}
+
+.contact-login {
+  padding: 80px 0;
 }
 
 .site-header__list {
@@ -1612,6 +1618,10 @@ body {
     background-position-x: calc(50% + 408px);
     background-position-y: calc(50% - 342px);
     background-size: 780px;
+  }
+  .contact-login {
+    padding: 0 0;
+    padding-top: 80px;
   }
   .site-header {
     position: relative;
@@ -1777,9 +1787,14 @@ body {
   body {
     background-image: url("../../images/contact-header-after.svg");
     background-repeat: no-repeat;
-    background-position-x: calc(50% + 475px);
-    background-position-y: calc(50% - 450px);
+    /*background-position-x: calc(50% + 475px);
+        background-position-y: calc(50% - 450px);*/
+    background-position: calc(50% + 475px) -520px;
     background-size: 780px;
+  }
+  .contact-login {
+    padding: 0 0;
+    padding-top: 80px;
   }
   .site-header {
     position: relative;

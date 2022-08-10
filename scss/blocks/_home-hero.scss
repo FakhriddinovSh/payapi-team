@@ -184,8 +184,15 @@
 }
 
 @media only screen and (max-width: 480px) {
+<<<<<<< HEAD
     .home-body{
         background-position: center calc(50% - 400px);
+=======
+    .home-hero{
+        padding: 32px 0 79px;
+    background-position: center calc(50% - 400px);
+
+>>>>>>> c7c0ad458d60eec5f519dbdf374b9195157c8ccf
     }
     .hero-box{  
         max-width: 327px;
