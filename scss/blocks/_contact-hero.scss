@@ -1,9 +1,9 @@
 body{
     background-image: url("../../images/contact-header-after.svg");
     background-repeat: no-repeat;
-    background-position-x: calc(50% + 307px);
-    background-position-y: calc(50% - 394px);
+    /*background-position: calc(50% + 307px) calc(50% - 394px);*/
     background-size: 780px;
+    background-position: 307px calc(50% - 394px);
 }
 
 .site-header {
@@ -23,7 +23,6 @@ body{
 }
 
 .site-header__hamburger {
-    position: absolute;
     background-color: transparent;
     border: none;
     background-image: url("../images/contact-hamburger.svg");
@@ -31,7 +30,6 @@ body{
     width: 28px;
     height: 17px;
     z-index: 12;
-    right: 10px;
 }
 
 .site-header--active .site-header__hamburger {
@@ -54,6 +52,10 @@ body{
 
 .site-header--active .site-header__nav {
     display: block;
+}
+
+.contact-login{
+    padding: 80px 0;
 }
 
 .site-header__list {
@@ -152,6 +154,11 @@ body{
         background-position-x: calc(50% + 408px);
         background-position-y: calc(50% - 342px);
         background-size: 780px;
+    }
+
+    .contact-login{
+        padding: 0 0;
+        padding-top: 80px;
     }
     
     .site-header {
@@ -304,9 +311,15 @@ body{
     body{
         background-image: url("../../images/contact-header-after.svg");
         background-repeat: no-repeat;
-        background-position-x: calc(50% + 475px);
-        background-position-y: calc(50% - 450px);
+        /*background-position-x: calc(50% + 475px);
+        background-position-y: calc(50% - 450px);*/
+        background-position: calc(50% + 475px) -520px ;
         background-size: 780px;
+    }
+
+    .contact-login{
+        padding: 0 0;
+        padding-top: 80px;
     }
     
     .site-header {
