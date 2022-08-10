@@ -1309,7 +1309,7 @@ body {
   background-repeat: no-repeat;
   /*background-position: calc(50% + 307px) calc(50% - 394px);*/
   background-size: 780px;
-  background-position: 307px calc(50% - 394px);
+  background-position: 90px calc(50% - 500px);
 }
 
 .site-header {
